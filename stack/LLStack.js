@@ -16,6 +16,14 @@ class LinkedListStack {
     print(){
         this.items.print()
     }
+
+    getSize(){
+        return this.items.getSize();
+    }
+
+    peak(){
+        return this.items.head.value;
+    }
 }
 
 const stack = new LinkedListStack()
@@ -23,4 +31,6 @@ stack.push(5)
 stack.push("second")
 stack.print()
 console.log(stack.pop())
+stack.push(7)
+console.log(stack.peak())
 stack.print()
