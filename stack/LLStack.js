@@ -1,8 +1,8 @@
-import { DLinkedList } from "../linkedlist/DLinkedList.js";
+import { LinkedList } from "../linkedlist/LinkedList.js";
 
 class LinkedListStack {
     constructor(){
-        this.items = new DLinkedList()
+        this.items = new LinkedList()
     }
 
     push(value){

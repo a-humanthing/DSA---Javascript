@@ -5,7 +5,7 @@ class LLNode {
     }
 }
 
- export class DLinkedList {
+ export class LinkedList {
     constructor (){
         this.head = null;
         this.tail = null;
@@ -218,7 +218,7 @@ class LLNode {
 }
 
 
-// const dll = new DLinkedList()
+// const dll = new LinkedList()
 // dll.append(3)
 // dll.append(6)
 // dll.prepend(10)

@@ -1,7 +1,7 @@
-import {DLinkedList} from '../linkedlist/DLinkedList.js'
+import {LinkedList} from '../linkedlist/LinkedList.js'
 class LinkedListQueue {
     constructor(){
-        this.items = new DLinkedList()
+        this.items = new LinkedList()
     }
 
     enqueue(value){
