@@ -33,7 +33,7 @@ class LLNode {
             return;
         }
 
-    append(value){
+    append(value){  // add item with the tail;
         const node = new LLNode(value);
         if(!this.head&&!this.tail){
             this.head = node;
@@ -76,9 +76,23 @@ class LLNode {
         if(this.isEmpty()){
             console.log("List is empty")
             return;
-        }else{
+        }else if(this.size===1){
             const removed = this.tail;
-            this.tail 
+            this.head = null;
+            this.tail = null;
+            this.size--;
+            return removed;
+        }
+        else{
+            const removed = this.tail.value;
+            let prev = this.head;
+            while(prev.next!==this.tail){
+                prev = prev.next;
+            }
+            prev.next = null;
+            this.tail = prev
+            this.size--;
+            return removed;
         }
     }
 
